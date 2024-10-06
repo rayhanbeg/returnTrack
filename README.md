@@ -1,4 +1,3 @@
-
 # RetunTrack - Asset Management System
 
 ## Overview
@@ -11,6 +10,7 @@ Welcome to RetunTrack, your go-to solution for efficient asset management. This 
 - **User Management**: Role-based access control for secure and personalized user experiences.
 - **Inventory Management**: Efficiently manage inventory levels and track stock movements.
 - **Maintenance Scheduling**: Schedule and track maintenance activities to ensure asset longevity.
+- **Reset Password via Email**: Users can request a password reset, receive an email with a reset link, and securely update their password.
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ Welcome to RetunTrack, your go-to solution for efficient asset management. This 
 ### Installation
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/retuntrack.git
+    git clone https://github.com/rayhanbeg/returnTrack.git
     cd retuntrack
     ```
 
@@ -36,6 +36,9 @@ Welcome to RetunTrack, your go-to solution for efficient asset management. This 
     ```plaintext
     DATABASE_URL=mongodb://localhost:27017/retuntrack
     JWT_SECRET=your_jwt_secret
+    EMAIL_SERVICE=your_email_service_provider
+    EMAIL_USER=your_email_address
+    EMAIL_PASS=your_email_password
     ```
 
 4. **Run the application**
@@ -55,6 +58,17 @@ The dashboard provides an overview of asset statuses, recent activities, and qui
 - **Add New Asset**: Easily add new assets with detailed information.
 - **Edit Asset Details**: Update information about existing assets.
 - **Asset History**: View the complete history of an asset including transfers, maintenance, and usage.
+
+### Reset Password via Email
+If a user forgets their password, they can reset it via email by following these steps:
+
+1. **Forgot Password**: On the login page, click on the "Forgot Password" link.
+2. **Enter Email**: The user is prompted to enter the email address associated with their account.
+3. **Send Reset Link**: An email containing a password reset link is sent to the user’s registered email address. This is powered by an email service like [Nodemailer](https://nodemailer.com/) (configured using environment variables).
+4. **Reset Password**: The user clicks on the reset link in the email, which redirects them to a page where they can enter a new password.
+5. **Password Update**: After submitting the new password, the user can log in with the updated credentials.
+
+The reset email typically contains a time-limited, one-time-use token to ensure security.
 
 ### Reports
 Generate and download various reports such as:
