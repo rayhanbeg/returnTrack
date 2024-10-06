@@ -50,7 +50,7 @@ Welcome to RetunTrack, your go-to solution for efficient asset management. This 
 4. **Set up environment variables**
    Create `.env` for the server and `.env` for the server with the following variables (replace with your actual keys):
 
-   #### `.env.local` (Client-side):
+   #### `.env.` (server-side):
    ```plaintext
    DB_USER=your_db_user
    DB_PASS=your_db_password
