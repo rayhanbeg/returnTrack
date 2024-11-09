@@ -53,8 +53,8 @@ Welcome to RetunTrack, your go-to solution for efficient asset management. This 
    #### `.env.local` (Client-side):
    ```plaintext
    DB_USER=your_db_user
-DB_PASS=your_db_password
-ACCESS_TOKEN_SECRET=your_access_token_secret
+   DB_PASS=your_db_password
+   ACCESS_TOKEN_SECRET=your_access_token_secret
     ```
 
 4. **Run the application**

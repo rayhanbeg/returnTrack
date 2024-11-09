@@ -45,10 +45,10 @@ const Banner = () => {
               <div className="w-full h-full swiper-slide-content bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] absolute lg:gap-4 inset-0 text-white flex flex-col justify-center items-start px-10">
                 
                 <p className=" text-white text-left text-lg md:text-2xl lg:text-5xl lg:w-[800px]">
-                Lead, Inspire, and Shape the Future with ReturnTrack.
+                Become a Valued Member of ReturnTrack Today
                 </p>
                 <Link to='/join-employ' className="flex gap-1 items-center mt-2 w-40  lg:w-48 font-semibold btn btn-outline btn-accent">
-                  Join as Manager
+                  Join as employer
                 </Link>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Banner = () => {
                 <p className=" text-white text-left text-lg md:text-2xl lg:text-5xl lg:w-[800px]">
                 Lead, Inspire, and Shape the Future with ReturnTrack.
                 </p>
-                <Link to='/join-manager' className="flex gap-1 items-center mt-2 w-40  lg:w-48 font-semibold btn btn-outline btn-accent">
+                <Link to='/join-employ' className="flex gap-1 items-center mt-2 w-40  lg:w-48 font-semibold btn btn-outline btn-accent">
                   Join as Manager
                 </Link>
               </div>

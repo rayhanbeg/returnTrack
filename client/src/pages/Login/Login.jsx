@@ -85,7 +85,7 @@ const Login = () => {
                 id='email'
                 required
                 placeholder='Enter Your Email Here'
-                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900'
+                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-[#0077B6] bg-gray-200 text-gray-900'
               />
             </div>
             <div>
@@ -101,7 +101,7 @@ const Login = () => {
                 id='password'
                 required
                 placeholder='*******'
-                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900'
+                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-[#0077B6] bg-gray-200 text-gray-900'
               />
             </div>
           </div>
@@ -109,7 +109,7 @@ const Login = () => {
             <button
               disabled={loading}
               type="submit"
-              className="bg-rose-500 w-full rounded-md py-3 text-white"
+              className="bg-[#0077B6] w-full rounded-md py-3 text-white"
             >
               {loading ? <TbFidgetSpinner className="animate-spin m-auto"/> : 'Sign In'}
             </button>
@@ -118,7 +118,7 @@ const Login = () => {
         <div className='space-y-1'>
           <button 
             onClick={() => document.getElementById('reset_password_modal').showModal()}
-            className='text-xs hover:underline hover:text-rose-500 text-gray-400'
+            className='text-xs hover:underline hover:text-[#0077B6] text-gray-400'
           >
             Forgot password?
           </button>
@@ -142,7 +142,7 @@ const Login = () => {
           Don&apos;t have an account yet?{' '}
           <Link
             to='/signup'
-            className='hover:underline hover:text-rose-500 text-gray-600'
+            className='hover:underline hover:text-[#0077B6] text-gray-600'
           >
             Sign up
           </Link>
@@ -162,15 +162,15 @@ const Login = () => {
                 id='resetEmail'
                 required
                 placeholder='Enter Your Email Here'
-                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900 mb-4'
+                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-[#0077B6] bg-gray-200 text-gray-900 mb-4'
               />
               {
                 email ? (
                   <div className="modal-action">
-                    <button onClick={handleResetPassword} className="btn bg-rose-500 rounded-md p-1 text-white">Reset Password</button>
+                    <button onClick={handleResetPassword} className="btn bg-[#0077B6] rounded-md p-1 text-white">Reset Password</button>
                   </div>
                 ) : (
-                  <button onClick={() => document.getElementById('reset_password_modal').close()} className="btn hover:underline hover:text-rose-500 text-gray-600">Close</button>
+                  <button onClick={() => document.getElementById('reset_password_modal').close()} className="btn hover:underline hover:text-[#0077B6] text-gray-600">Close</button>
                 )
               }
             </div>
